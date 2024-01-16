@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/1fc749962b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="ti.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI Engineer</p>
+            <h1>Hi, I'm <span>Hari</span><br>from   Tamilnadu</h1>
+        </div>
+    </div>
+<!-- -------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="prof3.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I can create effective and responsive website in HTML and CSS. I have a good knowledge in python </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Have a strong experience in HTMl ,CSS</li>
+                        <li><span>Python</span><br>Python experience in AI field</li>
+                        <li><span>3D Designing</span><br>Have a experience in blender</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Have a  6 month experience</li>
+                        <li><span>Python</span><br>Have a one year experience</li>
+                        <li><span>3D Designing</span><br>Have a experience in 3D designing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Learn in youtube and online course</li>
+                        <li><span>Python</span><br>Learned in collage and online course</li>
+                        <li><span>3D Designing</span><br>Learned in own intrest </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services----------->    
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Web Devolopment</h2>
+                <p>In web Devolopment , have a massive knowledge and i also create a website user-friendly in html and css,
+                    and I can create a responsive and effective website.
+                </p>
+                <a href="#">View works</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Devoloper</h2>
+                <p>In python, make a gui interface concept and some liberies to create  a application to implement the data,
+                    and I can make a mathmetical concept based program.
+                </p>
+                <a href="#">View works</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-radiation"></i>
+                <h2>3D designing</h2>
+                <p>In 3D designing, In blender software create 3d model in movie and ads in rendering, I have experience in animation
+                    and I create a animation based works.
+                </p>
+                <a href="design.html">View works</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="web1.jpg">
+                <div class="layer">
+                    <h3>Web Devolopment</h3>
+                    <p>In web Devolopment , have a massive knowledge and i also create a website user-friendly in html and css.</p>
+                        <a href="https://github.com/HARI-CHARLEZ?tab=repositories"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="py.jpg">
+                <div class="layer">
+                    <h3>Python Devoloper</h3>
+                    <p>In python, make a gui interface concept and some liberies to create  a application to implement the data,</p>
+                        <a href="https://github.com/HARI-CHARLEZ/python-mini-project"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="3d.jpg">
+                <div class="layer">
+                    <h3>3D Designing</h3>
+                    <p>In 3D designing, In blender software create 3d model in movie and ads in rendering, I have experience in animation.</p>
+                        <a href="design.html"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class=btn>See more about me</a>
+    </div>
+</div>
+<!-------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Email : contact@example.com</p>
+                <P><i class="fa-solid fa-phone"></i>Contact no : 0123456789</P>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/hari-krishnan-373339288/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/tncharlez21"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/__________hari___/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/dashboard"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button tybe="submit" class="btn btn2">Submit</button>    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copy right©hari.made with  <i class="fas fa-heart"></i> charlez</p>
+    </div>
+</div>
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }     
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLpS7UVKuHJUIajcKw0biL8EHPB_X7gWo9Doq97mbwhd8wZ8JXJMk_ssnHObqhN6Iu/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
